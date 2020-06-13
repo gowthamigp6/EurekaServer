@@ -22,26 +22,26 @@ public class EurekaServerApplication  {
 		SpringApplication.run(EurekaServerApplication.class, args);
 	}
 
-	@Bean("httpTraceFilter")
-	public Filter httpTraceFilter() {
-		return new Filter() {
-			@Override
-			public void init(FilterConfig filterConfig) throws ServletException {
-
-			}
-
-			@Override
-			public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse,
-					FilterChain filterChain) throws IOException, ServletException {
-				filterChain.doFilter(servletRequest, servletResponse);
-			}
-
-			@Override
-			public void destroy() {
-				// TODO Auto-generated method stub
-				
-			}
-		};
-	}
+//	@Bean("httpTraceFilter")
+//	public Filter httpTraceFilter() {
+//		return new Filter() {
+//			@Override
+//			public void init(FilterConfig filterConfig) throws ServletException {
+//
+//			}
+//
+//			@Override
+//			public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse,
+//					FilterChain filterChain) throws IOException, ServletException {
+//				filterChain.doFilter(servletRequest, servletResponse);
+//			}
+//
+//			@Override
+//			public void destroy() {
+//				// TODO Auto-generated method stub
+//				
+//			}
+//		};
+//	}
 
 }
